@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            padding: 20px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+        }
+
+        .box-one {
+            background-color: tomato;
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .box-two {
+            background-color: #3498db;
+            grid-row: 1 / -1;
+        }
+
+        .box-three {
+            background-color: rgb(153, 102, 153);
+        }
+        .box-four{
+            background-color: green;
+        }
+        .box-five{
+            background-color: red;
+            grid-column: 1 / 3;
+        }
+
+        .container {
+           /* flex-direction: column-reverse;
+            border: 3px solid black;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 0;
+            height: 600px; */
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:1fr minmax(100px,1fr) 1fr ;
+            border: solid black 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="teh_poci2.png" width="200" height="300" alt="teh poci" title="teh poci2"> -->
+    <!-- <table border="1" width="400" height="200">
+        <thead>
+            <tr>
+                <th>Judul 1</th>
+                <th>Judul 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Baris ke-1, kolom ke 1</td>
+                <td>Baris ke 1,Kolom ke 2</td>
+            </tr>
+            <tr>
+                <td>Baris ke-2, kolom ke 1</td>
+                <td>Baris ke 2,Kolom ke 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>185</td>
+            </tr>
+        </tfoot> -->
+    <!-- <thead>
+            <tr>
+                <th colspan="2">Nama Lengkap</th>
+                <th rowspan="2">Umur</th>
+                <th rowspan="2">Jurusan</th>
+            </tr>
+            <tr>
+                <th>Nama Depan</th>
+                <th>Nama Belakanf</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: center;">
+                <td>Jill</td>
+                <td>Jilly</td>
+                <td>43</td>
+                <td>Informatika</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!-- <form action="#" method="POST">
+        <label for="username">
+            Username
+            <input type="text" id="username">
+        </label>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+        <label for="password">password</label>
+        <input type="password" name="" id="password">
+        <input type="submit">
+        <input type="reset">
+        <button type="submit">Kirim</button>
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td> : <input type="text" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td>
+                <td> : <input type="text" name="Email" id="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td> : <input type="text" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="alamat">Alamat</label>
+                </td>
+                <td> : <textarea name="alamat" id="alamat" cols="30" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Jurusan</label></td>
+                <td> : <select name="jurusan" id="jurusan">
+                        <option value="informatika">Informatika</option>
+                        <option value="sistem_informasi">Sistem Informasi</option>
+                    </select></td>
+            </tr>
+        </table>
+        <br>
+        <label for="hobi">Hobi</label>
+        <input type="checkbox" name="matakuliah" id="matakuliah" value="PBW"> PBW
+        <input type="checkbox" name="matakuliah" id="matakuliah" value="Sistem Operasi"> Sistem Operasi
+        <input type="checkbox" name="matakuliah" id="matakuliah" value="Kecerdasan Buatan"> Kecerdasan Buatan
+        <br>
+        <label for="jk">Jenis Kelamin</label>
+        <input type="radio" name="jk" id="jk">Laki-Laki
+        <input type="radio" name="jk" id="jk">Perempuan
+        <br>
+        <br>
+        <input type="submit" value="Tambah">
+    </form> -->
+    <div class="container">
+        <div class="box-one">
+            Box 1
+        </div>
+        <div class="box-two">
+            Box 2
+        </div>
+        <div class="box-three">
+            Box 3
+        </div>
+        <div class="box-four">
+            Box 4
+        </div>
+        <div class="box-five">
+            box 5
+        </div>
+    </div>
+</body>
+
+</html>

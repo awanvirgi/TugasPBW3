@@ -1,0 +1,77 @@
+h2 {
+    color: yellow;
+}
+
+* {
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+h4 {
+    font: size 1rem;
+}
+
+.h41 {
+    color: aquamarine;
+}
+
+.h42 {
+    color: b;
+}
+
+.h43 {
+    color: red;
+}
+
+#footer {
+    font-size: xx-large;
+}
+
+[title] {
+    color: blue;
+}
+
+.test1,
+.test2,
+.test3 {
+    color: blue;
+}
+
+header>nav {
+    color: blue;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    border:10px solid blue;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: red !important;
+}
+
+a:active {
+    color: green !important;
+}
+
+.fonttest {
+    font-size: 10px;
+}
+
+.fonttest p {
+    font-size: 1rem;
+}
